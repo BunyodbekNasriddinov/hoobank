@@ -54,10 +54,6 @@ img {
   padding: 20px;
 }
 
-.logo-pic {
-  margin-right: 4px;
-}
-
 .sitenav {
   display: flex;
 }
@@ -339,6 +335,16 @@ img {
   padding: 18px;
 }
 
+.buisness__item:hover {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  border-radius: 20px;
+}
+
 .reward::before {
   position: absolute;
   content: "";
@@ -347,16 +353,6 @@ img {
   display: inline-block;
   background-image: url("../images/reward.svg");
   background-repeat: no-repeat;
-}
-
-.secure {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  border-radius: 20px;
 }
 
 .secure::before {
@@ -626,4 +622,87 @@ img {
 
 .article__link {
   margin: 0 100px 0 0;
+}
+
+/* FOOTER START */
+.footer {
+  margin: 82px 0 0 0;
+  padding: 72px 0 0 0;
+  background-color: #0b0a0c99;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__desc {
+}
+
+.footer__text {
+  width: 312px;
+  margin: 30px 0 0 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style-type: none;
+}
+
+.footer__item {
+  margin-bottom: 12px;
+}
+
+.footer__strong {
+  margin: 0;
+  margin-bottom: 14px;
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffffb3;
+  text-decoration: none;
+}
+
+.footer__line {
+  height: 0;
+  border: 1px solid #3f3e45;
+}
+
+.social {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__small {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff99;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.social__item {
+  margin-right: 33px;
 }
