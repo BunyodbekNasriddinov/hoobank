@@ -94,7 +94,6 @@ img {
 }
 
 .hero__inner {
-  /* width: 680px; */
   background-image: url("../images/hero-bgi.png");
   background-repeat: no-repeat;
   background-position: 540px 10px;
