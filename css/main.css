@@ -467,3 +467,163 @@ img {
   letter-spacing: 0.01em;
   color: #ffffffb3;
 }
+
+/* ABOUT START */
+.about {
+  padding: 170px 0 0;
+}
+
+.about__inner {
+}
+
+.about__texts {
+  display: flex;
+  align-items: center;
+}
+
+.about__title {
+  width: 610px;
+  margin: 0 129px 0 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 170%;
+  color: #ffffff;
+}
+
+.about__title h2 {
+  margin: 0;
+}
+
+.about__text {
+  width: 450px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about__list {
+  margin: 80px 0 0;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.about__item {
+  width: 370px;
+  padding: 60px 40px;
+}
+
+.about__item::before {
+  content: "";
+  width: 45px;
+  height: 30px;
+  display: inline-block;
+  background-image: url("../images/tickle.png");
+  background-repeat: no-repeat;
+}
+
+.about__comment {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.about__userbox {
+  display: flex;
+  align-items: center;
+}
+
+.about__user {
+  margin-left: 16px;
+}
+
+.about__username {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.about__userjob {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.about__item:hover {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+/* SPONSORS START */
+.sponsors {
+  padding: 100px 0 0 0;
+}
+
+.sponsors__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ARTICLE START */
+.article {
+  padding: 110px 0 0 0;
+}
+
+.article__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+.article__desc {
+  padding: 72px 0 72px 97px;
+}
+
+.article__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.article__text {
+  width: 450px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.article__link {
+  margin: 0 100px 0 0;
+}
