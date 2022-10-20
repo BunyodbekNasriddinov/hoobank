@@ -1,0 +1,469 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.4s ease;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  background-color: #00040f;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-pic {
+  margin-right: 4px;
+}
+
+.sitenav {
+  display: flex;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.sitenav__item {
+  position: relative;
+  margin: 0 0 0 56px;
+}
+
+.sitenav__item:first-child {
+  margin: 0;
+}
+
+.sitenav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffffb3;
+  text-decoration: none;
+}
+
+.activelink {
+  color: #ffffff;
+}
+
+/* HERO START */
+.hero {
+  margin: 0;
+  padding: 190px 0 0px;
+}
+
+.hero__inner {
+  /* width: 680px; */
+  background-image: url("../images/hero-bgi.png");
+  background-repeat: no-repeat;
+  background-position: 540px 10px;
+  background-size: contain;
+}
+
+.hero__content {
+  width: 670px;
+  position: relative;
+}
+
+.discount {
+  width: 408px;
+  display: flex;
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  border-radius: 10px;
+}
+
+.discount__title {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 10px 4px 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.discount::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  padding: 4px 0 4px 10px;
+  background-image: url("../images/discount.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hero__desc {
+  width: 483px;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.hero__span {
+  display: block;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__link {
+  width: 140px;
+  position: absolute;
+  top: 80px;
+  right: 60px;
+  padding: 48px 20px 38px 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-decoration: none;
+  border: 4px solid #50cbcf;
+  border-radius: 50%;
+}
+
+.hero__link::before {
+  position: absolute;
+  right: 35px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("../images/arrow-up.svg");
+}
+
+.hero__link a {
+  color: #33bbcf;
+  text-decoration: none;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ACTIVITY START */
+.activity {
+  padding-top: 80px;
+}
+
+.activity__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity__users {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40.8925px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.activity__companys {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40.8925px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.activity__transactions {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40.8925px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.activity__gradient {
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 20.4463px;
+  line-height: 130%;
+  text-transform: uppercase;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.activity__column {
+  width: 2px;
+  height: 13px;
+  background-color: #ffffff99;
+}
+
+/* BUISNESS START */
+.buisness {
+  padding-top: 180px;
+}
+
+.buisness__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buisness__texts {
+  width: 622px;
+}
+
+.buisness__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.buisness__text {
+  margin: 24px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.started {
+  display: inline-block;
+  padding: 19px 33px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #00040e;
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.buisness__link {
+  margin: 48px 0 0;
+}
+
+.buisness__list {
+  width: 470px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.buisness__item {
+  position: relative;
+  width: 470px;
+  padding: 18px;
+}
+
+.reward::before {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background-image: url("../images/reward.svg");
+  background-repeat: no-repeat;
+}
+
+.secure {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  border-radius: 20px;
+}
+
+.secure::before {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background-image: url("../images/secure.svg");
+  background-repeat: no-repeat;
+}
+
+.transfer::before {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background-image: url("../images/transfer.svg");
+  background-repeat: no-repeat;
+}
+
+.buisness__name {
+  margin: 0 0 0 100px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.buisness__desc {
+  margin: 0 0 0 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* CALCULATION START */
+.calculation {
+  padding: 160px 0 0;
+}
+
+.calculation__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calculation__texts {
+  width: 470px;
+}
+
+.calculation__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.calculation__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffffb3;
+}
+
+.calculation__stores {
+  margin: 50px 0 0;
+}
+
+.calculation__appstore {
+  margin: 0 32px 0 0;
+}
+
+/* FIND START */
+.find {
+  padding: 180px 0 0;
+}
+
+.find__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.find__texts {
+  width: 570px;
+}
+
+.find__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.find__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: #ffffffb3;
+}
